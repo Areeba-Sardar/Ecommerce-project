@@ -24,14 +24,17 @@ A responsive ecommerce web application built using Flask, HTML, CSS, and Python.
 ---
 
 # Project Structure
-
-ecommerce-project/
+```text
+Week 2 task/
 │
 ├── static/
 │   ├── css/
 │   │   └── style.css
 │   │
-│   ├── images/
+│   └── images/
+│       ├── shoe.jpg
+│       ├── watch.jpg
+│       └── headphone.jpg
 │
 ├── templates/
 │   ├── index.html
@@ -39,12 +42,16 @@ ecommerce-project/
 │   └── product_details.html
 │
 ├── screenshots/
+│   ├── home-week2.png
+│   ├── products-week2.png
+│   ├── search-feature.png
+│   └── product-details-week2.png
 │
 ├── app.py
+├── products.db
 ├── requirements.txt
 └── README.md
-
----
+```
 
 # Routes
 
