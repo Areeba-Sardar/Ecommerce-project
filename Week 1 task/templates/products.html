@@ -1,0 +1,92 @@
+<!-- templates/products.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+        <h2>MyShop</h2>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products">Products</a></li>
+        </ul>
+    </nav>
+
+    <!-- Products Section -->
+
+    <section class="products-section">
+
+        <h1 class="products-title">Our Products</h1>
+
+        <div class="products-grid">
+
+            <!-- Product 1 -->
+
+            <div class="product-card">
+
+                <img src="{{ url_for('static', filename='images/shoe.jpg') }}" alt="Shoes">
+
+                <h3>Nike Shoes</h3>
+
+                <p>$120</p>
+
+                <a href="/product/1">
+                    <button>View Details</button>
+                </a>
+
+            </div>
+
+            <!-- Product 2 -->
+
+            <div class="product-card">
+
+                <img src="{{ url_for('static', filename='images/watch.jpg') }}" alt="Watch">
+
+                <h3>Smart Watch</h3>
+
+                <p>$80</p>
+
+                <a href="/product/2">
+                    <button>View Details</button>
+                </a>
+
+            </div>
+
+            <!-- Product 3 -->
+
+            <div class="product-card">
+
+                <img src="{{ url_for('static', filename='images/headphone.jpg') }}" alt="Headphones">
+
+                <h3>Headphones</h3>
+
+                <p>$50</p>
+
+                <a href="/product/3">
+                    <button>View Details</button>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <p>© 2026 MyShop. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
